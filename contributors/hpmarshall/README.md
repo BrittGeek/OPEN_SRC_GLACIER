@@ -1,24 +1,8 @@
-# Topohack
+# topohack
 Taking ICESat-2 to the mountains: a workflow using satellite laser altimetry to resolve topography over complex terrain  
 
-### General Objective
+### Data Science Objective
 Compare and evaluate ICESat-2 data with high resolution DEMs (airborne lidar/satellite stereo) collected at lower latitudes over bare ground. 
-
-## Collaborators  
-  Vibhor Agarwal  
-  Michelle Hu  
-  Friedrich Knuth  
-  HP Marshall  
-  Justin Pflug  
-  Mariama Dryak  
-  Will Kochtitzky  
-
-### Team Lead:
-  Shashank Bhushan  
-
-### Data Science Leads:  
-  Joachim Meyer  
-  Amy Steicker  
 
 ### Datasets
 - ICESat-2 [ATL06](https://nsidc.org/data/atl06?qt-data_set_tabs=3#qt-data_set_tabs) (20 m resolution)
@@ -29,16 +13,16 @@ Compare and evaluate ICESat-2 data with high resolution DEMs (airborne lidar/sat
 - [WADNR Lidar](http://lidarportal.dnr.wa.gov/)
 - [ASO Lidar](https://nsidc.org/data/aso)
 - [Himat DEMs](https://nsidc.org/the-drift/data-update/high-mountain-asia-8-meter-digital-elevation-models-now-available/)
-- [Jemez, NM CZO](https://criticalzone.org/catalina-jemez/data/dataset/4182/)
-- DEM from H.P.
+- [Jemez, NM CZO] (link)
+- DEM from H.P. and Justin (add)
+- point cloud example from Senator Beck to compare with ATL03 [HP]
 
 ### Tools
 - Python: geopandas, rasterio, numpy, scipy, pandas, [pygeotools](https://github.com/dshean/pygeotools), [demcoreg](https://github.com/dshean/demcoreg)
 - [NASA Ames Stereo Pipeline](https://github.com/NeoGeographyToolkit/StereoPipeline)
 
-### High-level Goals
+### Tasks
 - Learn how to download the ICESat-2 data by lat lon bounding box
-- Create library with some basic convenience functions
 - Explore [OpenAltimetry](https://openaltimetry.org/data/icesat2/) and utility with multiple locations and time periods
 - Explore ATL03 and ATL06 products and [theoretical](https://icesat-2.gsfc.nasa.gov/sites/default/files/page_files/ICESat2_ATL06_ATBD_r001.pdf) basis
 - Learn how to subset ATL03 and ATL06 data based on flags
@@ -49,10 +33,5 @@ Compare and evaluate ICESat-2 data with high resolution DEMs (airborne lidar/sat
 ### Study Sites:
 - Dependent on ICESat-2 coverage.
 - Potential study sites: Cascades and Olympic Ranges (western WA), Rocky Mountains (CO), High Mountain Asia, Grand Mesa (CO)
-
-### Team Wiki
-Further information can be found on our [team wiki page](https://github.com/ICESAT-2HackWeek/topohack/wiki)
-
-
-### Test Drive
-To launch this repository on a Pangeo Binder instance and try out topolib using the examples under notebooks/, click here: [![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/friedrichknuth/topohack.git/master)
+### Other Questions 
+Are notebooks available that show how the comparison between IceBridge lidar and ICESat-2 tracks was done?
