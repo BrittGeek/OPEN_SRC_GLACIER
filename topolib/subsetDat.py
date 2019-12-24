@@ -1,5 +1,7 @@
 import rasterio as rio
-from pyproj import Proj, transform
+#Rasterio is a RASTER data package
+from pyproj import Proj, transform 
+#(cartographic projections and coordinate transformations)
 import xarray as xr
 import h5py
 
