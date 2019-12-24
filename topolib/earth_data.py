@@ -1,3 +1,4 @@
+# Used to initialize the download requests from the EARTHDATA servers
 import requests
 
 from requests.compat import urlparse
